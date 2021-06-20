@@ -1,0 +1,52 @@
+
+
+
+.col {
+    display: flex;
+    flex-direction: row;
+  
+    div {
+      border-radius: 20px;
+      border: 1px solid $white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3px;
+      height: 100px;
+    }
+  }
+  
+  .col02 > div {
+    width: 100px;
+    margin-bottom: 1.2rem;
+  }
+  
+  .col03 > div {
+    width: 155px;
+  }
+  
+  .col04 > div {
+    width: 155px;
+  }
+  
+  .gateaux {
+    width: 210px;
+  }
+  
+  .tarts {
+    width: 100px;
+  }
+  
+  .subtitle {
+    margin: 1rem;
+  
+    position: relative;
+  
+    .tereo {
+      position: absolute;
+      top: -1rem;
+      left: 1.6rem;
+    }
+  }
+  

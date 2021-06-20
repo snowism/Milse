@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  width: 100vw;
+  height: 60px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #402015;
+  background-color: snow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  position: absolute;
+  top: 0;
+}
+
+main {
+  background-color: #402015;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  color: #f2e4c9;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+select {
+  width: 280px;
+  height: 35px;
+  padding: 4px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  width: 120px;
+  font-family: "Montserrat", sans-serif;
+}
+
+input {
+  border: none;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 6px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 6px;
+  outline: none;
+}
+
+ul {
+  text-align: left;
+  background-color: snow;
+  border-radius: 20px;
+  color: #402015;
+  padding: 1.4rem;
+  margin-bottom: 6px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav img {
+  width: 30px;
+}
+
+.nav .mypage {
+  height: 35px;
+}
+
+.nav-about,
+.nav-menu,
+.nav-mypage,
+.nav-bag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.currentpage {
+  border-radius: 50%;
+  background-color: #402015;
+  height: 5px;
+  width: 5px;
+  margin-bottom: 2px;
+}
+
+.nav-bag {
+  position: relative;
+}
+
+.cartbadge {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: red;
+  color: snow;
+  text-align: center;
+  right: -10px;
+  top: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-short {
+  width: 150px;
+  color: #f2e4c9;
+}
+
+.btn-long {
+  width: 280px;
+  color: snow;
+}
+
+.product .buy {
+  position: absolute;
+  bottom: 0;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 20px solid #402015;
+  left: 10px;
+  top: 15px;
+}
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.col div {
+  border-radius: 20px;
+  border: 1px solid snow;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3px;
+  height: 100px;
+}
+
+.col02 > div {
+  width: 100px;
+  margin-bottom: 1.2rem;
+}
+
+.col03 > div {
+  width: 155px;
+}
+
+.col04 > div {
+  width: 155px;
+}
+
+.gateaux {
+  width: 210px;
+}
+
+.tarts {
+  width: 100px;
+}
+
+.subtitle {
+  margin: 1rem;
+  position: relative;
+}
+
+.subtitle .tereo {
+  position: absolute;
+  top: -1rem;
+  left: 1.6rem;
+}
+
+.listcol01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 150px;
+  height: 280px;
+  margin: auto;
+  position: relative;
+}
+
+.product img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.product .name {
+  height: 40px;
+}
+
+.product .name,
+.product .price {
+  margin-bottom: 6px;
+}
+
+.cake01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cake01 img {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.cake01 .details {
+  background-color: snow;
+  color: #402015;
+  border-radius: 20px;
+  margin: 1rem;
+  padding: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order img {
+  width: 20px;
+}
+
+.order .multi-buy-counter {
+  margin: 15px;
+  font-size: 24px;
+  text-align: center;
+  width: 30px;
+}
+
+.ingredients {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+}
+
+.mybag-wrapper {
+  text-align: center;
+}
+
+.mybag-wrapper h2 {
+  margin: 0.6rem;
+}
+
+.chooseatime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.4rem;
+}
+
+.chooseatime .l-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.l-row > div {
+  width: 80px;
+  height: 80px;
+  margin: 6px;
+  border-radius: 20px;
+  border: 1px solid snow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paycard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  width: 340px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.expired > input {
+  width: 120px;
+}
+
+.cvc > input {
+  width: 60px;
+}
+
+.confirm {
+  width: 300px;
+  height: 200px;
+  opacity: 0.5;
+  border-radius: 20px;
+  background-image: url(/assets/people01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.info {
+  padding: 10px;
+}
+
+.info h5 {
+  text-align: center;
+}
+
+.info .pickupdate {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: snow;
+}
+
+.l-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.l-distance {
+  height: 30px;
+}
+
+.l-login-wrapper {
+  background-image: url(/assets/01.jpg);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.l-wrapper2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:visited {
+  color: #f2e4c9;
+}
+
+.gateaux:hover {
+  background-image: url(/assets/g04.jpg);
+  background-size: cover;
+  opacity: 1;
+  border: none;
+}
+
+.selectdate:hover {
+  background-color: #f2a679;
+  color: #402015;
+  cursor: pointer;
+}
+
+.selectdate * {
+  pointer-events: none;
+}
+
+.setcolor {
+  background-color: #f2a679;
+  color: #402015;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 200px;
+  -webkit-box-shadow: 10px 15px 15px rgba(66, 44, 39, 0.8);
+          box-shadow: 10px 15px 15px rgba(66, 44, 39, 0.8);
+}
+
+.btn {
+  background-color: #f2a679;
+  margin-bottom: 6px;
+  border-radius: 20px;
+  height: 35px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 3px 3px 3px rgba(66, 44, 39, 0.8);
+          box-shadow: 3px 3px 3px rgba(66, 44, 39, 0.8);
+}
+/*# sourceMappingURL=styles.css.map */

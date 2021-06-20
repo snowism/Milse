@@ -1,0 +1,9 @@
+@mixin btn {
+    background-color: $button-col;
+    margin-bottom: 6px;
+    border-radius: 20px;
+    height: 35px;
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 3px $dark-shadow;
+}

@@ -1,0 +1,39 @@
+
+a {
+    text-decoration: none;
+}
+
+
+a:hover {
+    cursor:pointer;
+  
+}
+
+a:visited {
+   
+    color:$cream-col;
+
+}
+
+.gateaux:hover{
+    background-image: url(/assets/g04.jpg);
+    background-size: cover;
+    opacity: 1;
+    border: none;
+}
+
+.selectdate:hover {
+    background-color: $button-col;
+    color: $dark-cho;
+    cursor:pointer;
+}
+
+.selectdate * {
+    pointer-events: none;
+}
+
+.setcolor {
+    background-color: $button-col;
+    color: $dark-cho;
+   
+}

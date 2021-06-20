@@ -1,0 +1,73 @@
+
+
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $half-white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+  z-index: 1000;
+  
+    img {
+      width: 30px;
+     
+    }
+
+    .mypage {
+      height: 35px;
+    }
+  }
+  
+  .nav-about,
+  .nav-menu,
+  .nav-mypage,
+  .nav-bag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .currentpage {
+    border-radius: 50%;
+    background-color: $dark-cho;
+    height: 5px;
+    width: 5px;
+    margin-bottom: 2px;
+    
+  }
+  
+  
+  
+  .nav-bag {
+    position: relative;
+    
+  }
+  
+  .cartbadge {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    color:$white;
+    text-align:center;
+    right: -10px;
+    top:-5px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+    
+  }
+  
